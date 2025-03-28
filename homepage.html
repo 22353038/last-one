@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/homepage1.css">
+    <link rel="stylesheet" href="css/homepage1 (2).css">
     <title>RENTMANIA</title>
     <head>
       <!-- Swiper CSS -->
@@ -30,7 +30,7 @@
         </div>
         <ul class="nav__links" id="nav-links">
           <li><a href="homepage.html">Home</a></li>
-          <li><a href="products.html">All Products</a></li> <!-- Add this line -->
+          <li><a href="products.html">Product</a></li> <!-- Add this line -->
           <li><a href="login.html">Login</a></li>
           <li><a href="register.html">Register</a></li>
         </ul>
@@ -79,40 +79,80 @@
       </a>
     </header>
 
-    <section class="section__container range__container" id="about">
-      <h2 class="section__header">RENT RELAX RETURN</h2>
-      <div class="range__grid">
-        <div class="range__card">
-          <img src="assets/image/CAMER.webp" alt="range" />
-          <div class="range__details">
-            <h4>camera</h4>
-            <a href="product.html?id=1" class="product-link"><i class="ri-arrow-right-line"></i></a>
-          </div>
-        </div>
-        <div class="range__card">
-          <img src="assets/image/CONSOLE.webp" alt="range" />
-          <div class="range__details">
-            <h4>console</h4>
-            <a href="product.html?id=1" class="product-link"><i class="ri-arrow-right-line"></i></a>
-          </div>
-        </div>
-        <div class="range__card">
-          <img src="assets/image/CONSOLE.webp" alt="range" />
-          <div class="range__details">
-            <h4>laptop</h4>
-            <a href="product.html?id=1" class="product-link"><i class="ri-arrow-right-line"></i></a>
-          </div>
-        </div>
-        <div class="range__card">
-          <img src="assets/image/SMART TV.webp" alt="range" />
-          <div class="range__details">
-            <h4>smart tv</h4>
-            <a href="product.html?id=1" class="product-link"><i class="ri-arrow-right-line"></i></a>
-          </div>
+    <!-- Replace the existing range__container section in homepage.html with this: -->
+<section class="section__container showcase__container" id="about">
+  <div class="section__header__wrapper">
+    <h2 class="section__header">RENT • RELAX • RETURN</h2>
+    <p class="section__subheader">Premium electronics for your every need</p>
+  </div>
+  
+  <div class="showcase__grid">
+    <div class="showcase__card">
+      <div class="showcase__image">
+        <img src="assets/image/CAMER.webp" alt="Camera" loading="lazy">
+        <div class="showcase__overlay">
+          <a href="product.html?id=1" class="showcase__link">
+            <i class="ri-arrow-right-line"></i>
+          </a>
         </div>
       </div>
-    </section>
-
+      <div class="showcase__content">
+        <h3>Professional Gear</h3>
+        <p>High-end equipment for creators</p>
+      </div>
+    </div>
+    
+    <div class="showcase__card">
+      <div class="showcase__image">
+        <img src="assets/image/CONSOLE.webp" alt="Console" loading="lazy">
+        <div class="showcase__overlay">
+          <a href="product.html?id=2" class="showcase__link">
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+      <div class="showcase__content">
+        <h3>Entertainment</h3>
+        <p>Next-gen gaming experiences</p>
+      </div>
+    </div>
+    
+    <div class="showcase__card">
+      <div class="showcase__image">
+        <img src="assets/image/mac book air.webp" alt="Laptop" loading="lazy">
+        <div class="showcase__overlay">
+          <a href="product.html?id=3" class="showcase__link">
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+      <div class="showcase__content">
+        <h3>Productivity</h3>
+        <p>Powerful tools for work</p>
+      </div>
+    </div>
+    
+    <div class="showcase__card">
+      <div class="showcase__image">
+        <img src="assets/image/SMART TV.webp" alt="Smart TV" loading="lazy">
+        <div class="showcase__overlay">
+          <a href="product.html?id=4" class="showcase__link">
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+      <div class="showcase__content">
+        <h3>Home Comfort</h3>
+        <p>Enhance your living space</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="showcase__cta">
+    <p>Experience the convenience of premium rentals without the commitment</p>
+    <a href="products.html" class="btn btn__outline">Browse All Categories</a>
+  </div>
+</section>
     <section class="section__container location__container" id="rent">
       <div class="location__image">
         <img src="assets/image/map 1.png" alt="location" />
@@ -128,6 +168,7 @@
         </div>
       </div>
     </section>
+    <!-- Replace the entire select__container section with this: -->
     <section class="section__container select__container" id="ride">
       <h2 class="section__header">FEATURED PRODUCTS</h2>
       
@@ -136,7 +177,7 @@
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
+            <!-- First row of 4 products -->
             <div class="swiper-slide">
               <div class="product-card-carousel">
                 <img src="assets/image/CAMER.webp" alt="Canon Camera">
@@ -149,7 +190,6 @@
               </div>
             </div>
             
-            <!-- Add 5 more products following the same pattern -->
             <div class="swiper-slide">
               <div class="product-card-carousel">
                 <img src="assets/image/CONSOLE.webp" alt="PlayStation 5">
@@ -162,7 +202,78 @@
               </div>
             </div>
             
-            <!-- Continue with other products -->
+            <div class="swiper-slide">
+              <div class="product-card-carousel">
+                <img src="assets/image/SMART TV.webp" alt="Smart TV">
+                <div class="product-card-info">
+                  <h4>Smart TV</h4>
+                  <p>55" 4K Ultra HD Smart LED TV</p>
+                  <div class="price">$120/day</div>
+                  <button class="btn">Rent Now</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="product-card-carousel">
+                <img src="assets/image/mac book air.webp" alt="MacBook Air">
+                <div class="product-card-info">
+                  <h4>MacBook Air</h4>
+                  <p>M2 chip with 8-core CPU and 8-core GPU</p>
+                  <div class="price">$150/day</div>
+                  <button class="btn">Rent Now</button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Second row of 4 products -->
+            <div class="swiper-slide">
+              <div class="product-card-carousel">
+                <img src="assets/image/VR.webp" alt="VR Headset">
+                <div class="product-card-info">
+                  <h4>VR Headset</h4>
+                  <p>Immersive virtual reality experience</p>
+                  <div class="price">$75/day</div>
+                  <button class="btn">Rent Now</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="product-card-carousel">
+                <img src="assets/image/DRONE.webp" alt="Drone">
+                <div class="product-card-info">
+                  <h4>DJI Drone</h4>
+                  <p>4K camera with 30-minute flight time</p>
+                  <div class="price">$110/day</div>
+                  <button class="btn">Rent Now</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="product-card-carousel">
+                <img src="assets/image/SPEAKER.webp" alt="Speaker">
+                <div class="product-card-info">
+                  <h4>Bluetooth Speaker</h4>
+                  <p>360° sound with 20-hour battery</p>
+                  <div class="price">$35/day</div>
+                  <button class="btn">Rent Now</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="product-card-carousel">
+                <img src="assets/image/CAMERA.webp" alt="Camera">
+                <div class="product-card-info">
+                  <h4>GoPro Hero</h4>
+                  <p>Waterproof action camera 4K/60fps</p>
+                  <div class="price">$65/day</div>
+                  <button class="btn">Rent Now</button>
+                </div>
+              </div>
+            </div>
           </div>
           
           <!-- Navigation buttons -->
@@ -172,10 +283,8 @@
       </div>
     </section>
 
-   
-
     <section class="section__container story__container">
-      <h2 class="section__header">STORIES BEHIND THE WHEEL</h2>
+      <h2 class="section__header">STORIES BEHIND THE PRODUCTS</h2>
       <div class="story__grid">
         <div class="story__card">
           <div class="story__date">
@@ -329,7 +438,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- Your other scripts -->
-<script src="homepage2.js"></script>
+<script src="js/homepage2.js"></script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
